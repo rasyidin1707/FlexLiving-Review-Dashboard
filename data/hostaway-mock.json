@@ -1,0 +1,269 @@
+[
+  {
+    "id": 1001,
+    "listingId": 501,
+    "listingName": "Soho Loft 2BR",
+    "type": "guest-to-host",
+    "status": "published",
+    "rating": 5,
+    "ratingScale": 5,
+    "reviewCategory": [
+      { "category": "cleanliness", "rating": 9 },
+      { "category": "communication", "rating": 10 },
+      { "category": "location", "rating": 9 }
+    ],
+    "publicReview": "Fantastic location and super responsive host.",
+    "submittedAt": "2023-11-14 18:32:10",
+    "guestName": "Alice",
+    "channel": "Airbnb"
+  },
+  {
+    "id": 1002,
+    "listingId": 501,
+    "listingName": "Soho Loft 2BR",
+    "type": "guest-to-host",
+    "status": "published",
+    "rating": 4,
+    "ratingScale": 5,
+    "reviewCategory": [
+      { "category": "cleanliness", "rating": 7 },
+      { "category": "communication", "rating": 8 },
+      { "category": "respect_house_rules", "rating": 9 }
+    ],
+    "publicReview": "Good stay, a bit noisy on weekend nights.",
+    "submittedAt": "2023-07-02 10:05:20",
+    "guestName": "Ben",
+    "channel": "Booking"
+  },
+  {
+    "id": 1003,
+    "listingId": 502,
+    "listingName": "Camden Townhouse",
+    "type": "guest-to-host",
+    "status": "published",
+    "rating": 8,
+    "ratingScale": 10,
+    "reviewCategory": [
+      { "category": "cleanliness", "rating": 6 },
+      { "category": "communication", "rating": 7 },
+      { "category": "check_in", "rating": 5 }
+    ],
+    "publicReview": "Check-in was a bit confusing, otherwise fine.",
+    "submittedAt": "2022-12-21 08:44:00",
+    "guestName": "Cara",
+    "channel": "Hostaway"
+  },
+  {
+    "id": 1004,
+    "listingId": 502,
+    "listingName": "Camden Townhouse",
+    "type": "guest-to-host",
+    "status": "published",
+    "rating": null,
+    "ratingScale": 10,
+    "reviewCategory": [
+      { "category": "cleanliness", "rating": 8 },
+      { "category": "communication", "rating": 9 }
+    ],
+    "publicReview": "Nice place but we didn’t rate overall.",
+    "submittedAt": "2024-01-05 12:12:54",
+    "guestName": "Dan",
+    "channel": "Airbnb"
+  },
+  {
+    "id": 1005,
+    "listingId": 503,
+    "listingName": "Shoreditch Studio",
+    "type": "guest-to-host",
+    "status": "published",
+    "rating": 3,
+    "ratingScale": 5,
+    "reviewCategory": [
+      { "category": "cleanliness", "rating": 5 },
+      { "category": "communication", "rating": 6 },
+      { "category": "noise", "rating": 4 }
+    ],
+    "publicReview": "Cool vibe but noisy at night.",
+    "submittedAt": "2021-08-09 21:10:45",
+    "guestName": "Ella",
+    "channel": "Airbnb"
+  },
+  {
+    "id": 1006,
+    "listingId": 503,
+    "listingName": "Shoreditch Studio",
+    "type": "host-to-guest",
+    "status": "published",
+    "rating": 9,
+    "ratingScale": 10,
+    "reviewCategory": [
+      { "category": "respect_house_rules", "rating": 9 },
+      { "category": "communication", "rating": 9 }
+    ],
+    "publicReview": "Pleasant guest, welcome back anytime.",
+    "submittedAt": "2021-09-10 15:00:00",
+    "guestName": "Ella",
+    "channel": "Hostaway"
+  },
+  {
+    "id": 1007,
+    "listingId": 504,
+    "listingName": "Kensington Garden Flat",
+    "type": "guest-to-host",
+    "status": "published",
+    "rating": 5,
+    "ratingScale": 5,
+    "reviewCategory": [
+      { "category": "cleanliness", "rating": 10 },
+      { "category": "communication", "rating": 10 },
+      { "category": "location", "rating": 10 }
+    ],
+    "publicReview": "Absolutely perfect stay!",
+    "submittedAt": "2020-03-03 09:20:00",
+    "guestName": "Frank",
+    "channel": "Booking"
+  },
+  {
+    "id": 1008,
+    "listingId": 504,
+    "listingName": "Kensington Garden Flat",
+    "type": "guest-to-host",
+    "status": "published",
+    "rating": 7,
+    "ratingScale": 10,
+    "reviewCategory": [
+      { "category": "cleanliness", "rating": 7 },
+      { "category": "communication", "rating": 8 },
+      { "category": "amenities", "rating": 6 }
+    ],
+    "publicReview": "Lovely area, bathroom could use an update.",
+    "submittedAt": "2021-02-12 13:15:55",
+    "guestName": "Grace",
+    "channel": "Airbnb"
+  },
+  {
+    "id": 1009,
+    "listingId": 505,
+    "listingName": "Canary Wharf Riverside",
+    "type": "guest-to-host",
+    "status": "published",
+    "rating": 4,
+    "ratingScale": 5,
+    "reviewCategory": [
+      { "category": "cleanliness", "rating": 8 },
+      { "category": "communication", "rating": 9 },
+      { "category": "location", "rating": 8 }
+    ],
+    "publicReview": "Great for business trip.",
+    "submittedAt": "2022-05-18 07:00:00",
+    "guestName": "Hank",
+    "channel": "Booking"
+  },
+  {
+    "id": 1010,
+    "listingId": 505,
+    "listingName": "Canary Wharf Riverside",
+    "type": "guest-to-host",
+    "status": "published",
+    "rating": null,
+    "ratingScale": 10,
+    "reviewCategory": [
+      { "category": "cleanliness", "rating": 6 },
+      { "category": "communication", "rating": 5 },
+      { "category": "check_in", "rating": 6 }
+    ],
+    "publicReview": "Solid overall, we didn’t give a score.",
+    "submittedAt": "2023-01-28 18:22:40",
+    "guestName": "Iris",
+    "channel": "Hostaway"
+  },
+  {
+    "id": 1011,
+    "listingId": 501,
+    "listingName": "Soho Loft 2BR",
+    "type": "guest-to-host",
+    "status": "published",
+    "rating": 9,
+    "ratingScale": 10,
+    "reviewCategory": [
+      { "category": "cleanliness", "rating": 9 },
+      { "category": "communication", "rating": 9 },
+      { "category": "amenities", "rating": 8 }
+    ],
+    "publicReview": "Spacious and well-equipped.",
+    "submittedAt": "2024-06-05 11:11:11",
+    "guestName": "Jake",
+    "channel": "Hostaway"
+  },
+  {
+    "id": 1012,
+    "listingId": 502,
+    "listingName": "Camden Townhouse",
+    "type": "guest-to-host",
+    "status": "published",
+    "rating": 6,
+    "ratingScale": 10,
+    "reviewCategory": [
+      { "category": "cleanliness", "rating": 6 },
+      { "category": "communication", "rating": 6 },
+      { "category": "location", "rating": 7 }
+    ],
+    "publicReview": "Decent value for money.",
+    "submittedAt": "2020-07-22 14:40:00",
+    "guestName": "Ken",
+    "channel": "Airbnb"
+  },
+  {
+    "id": 1013,
+    "listingId": 503,
+    "listingName": "Shoreditch Studio",
+    "type": "guest-to-host",
+    "status": "published",
+    "rating": 2,
+    "ratingScale": 5,
+    "reviewCategory": [
+      { "category": "cleanliness", "rating": 5 },
+      { "category": "communication", "rating": 6 },
+      { "category": "noise", "rating": 3 }
+    ],
+    "publicReview": "Too loud for us.",
+    "submittedAt": "2020-10-03 22:10:00",
+    "guestName": "Lara",
+    "channel": "Booking"
+  },
+  {
+    "id": 1014,
+    "listingId": 504,
+    "listingName": "Kensington Garden Flat",
+    "type": "host-to-guest",
+    "status": "published",
+    "rating": 10,
+    "ratingScale": 10,
+    "reviewCategory": [
+      { "category": "respect_house_rules", "rating": 10 },
+      { "category": "communication", "rating": 10 }
+    ],
+    "publicReview": "Wonderful guest.",
+    "submittedAt": "2022-01-01 10:10:10",
+    "guestName": "Mia",
+    "channel": "Hostaway"
+  },
+  {
+    "id": 1015,
+    "listingId": 505,
+    "listingName": "Canary Wharf Riverside",
+    "type": "guest-to-host",
+    "status": "published",
+    "rating": 5,
+    "ratingScale": 5,
+    "reviewCategory": [
+      { "category": "cleanliness", "rating": 9 },
+      { "category": "communication", "rating": 9 }
+    ],
+    "publicReview": "Would stay again!",
+    "submittedAt": "2024-02-14 16:00:00",
+    "guestName": "Nina",
+    "channel": "Airbnb"
+  }
+]
+

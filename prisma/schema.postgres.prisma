@@ -1,0 +1,64 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model Listing {
+  id             String   @id @default(cuid())
+  hostawayId     Int?     @unique
+  name           String   @unique
+  channel        String?
+  createdAt      DateTime @default(now())
+  updatedAt      DateTime @updatedAt
+  reviews        Review[]
+  websiteVisible Boolean  @default(true)
+}
+
+model Review {
+  id             String   @id @default(cuid())
+  source         String
+  sourceReviewId String?
+  externalKey    String   @unique
+  listingId      String
+  listing        Listing  @relation(fields: [listingId], references: [id])
+
+  type           String?
+  status         String?
+  ratingOverall  Float?
+  ratingItems    String? // keep stringified JSON for parity with SQLite
+  publicText     String?
+  submittedAt    DateTime?
+  authorName     String?
+  channel        String?
+  approved       Boolean  @default(false)
+  createdAt      DateTime @default(now())
+  updatedAt      DateTime @updatedAt
+
+  activityLogs   ActivityLog[]
+
+  @@index([listingId])
+  @@index([source])
+  @@index([source, sourceReviewId])
+  @@index([channel])
+  @@index([type])
+  @@index([approved])
+  @@index([submittedAt])
+  @@index([ratingOverall])
+}
+
+model ActivityLog {
+  id         String   @id @default(cuid())
+  reviewId   String
+  review     Review   @relation(fields: [reviewId], references: [id])
+  action     String
+  previous   Boolean?
+  next       Boolean?
+  createdAt  DateTime @default(now())
+
+  @@index([reviewId, createdAt])
+}
+
