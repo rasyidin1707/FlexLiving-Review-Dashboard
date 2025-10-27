@@ -552,7 +552,7 @@ export default function FlexDemoPage() {
       />
 
       <div>
-        <div className="text-lg font-semibold text-gray-800 mb-2">Listings</div>
+        <div className="text-lg font-semibold text-gray-800 dark:text-gray-100 mb-2">Listings</div>
         <div className="grid grid-cols-3 md:grid-cols-2 sm:grid-cols-1 gap-4">
           {listings.map((l) => (
             <ListingCard key={l.id} data={l} onClick={(id) => { setFilters({ ...filters, listingId: id }); setPage(1); }} />
