@@ -75,20 +75,27 @@ export default function FlexDemoPage() {
     } catch {}
   }, []);
 
+  const loadListings = React.useCallback(() => {
+    return fetch("/api/listings")
+      .then((r) => r.json())
+      .then((d) => {
+        const mapped: ListingSummary[] = (d.items || []).map((it: any) => ({
+          id: it.listingId,
+          name: it.listingName,
+          total: it.reviewCounts?.total ?? 0,
+          approved: it.reviewCounts?.approved ?? 0,
+          avgAll: it.avgRatingAll ?? null,
+          avgApproved: it.avgRatingApproved ?? null,
+          monthlySeries: [],
+        }))
+        setListings(mapped)
+      })
+      .catch(() => {})
+  }, [])
+
   React.useEffect(() => {
-    fetch("/api/listings").then((r) => r.json()).then((d) => {
-      const mapped: ListingSummary[] = (d.items || []).map((it: any) => ({
-        id: it.listingId,
-        name: it.listingName,
-        total: it.reviewCounts?.total ?? 0,
-        approved: it.reviewCounts?.approved ?? 0,
-        avgAll: it.avgRatingAll ?? null,
-        avgApproved: it.avgRatingApproved ?? null,
-        monthlySeries: [],
-      }));
-      setListings(mapped);
-    });
-  }, []);
+    loadListings()
+  }, [loadListings])
 
   // Hydrate filters/page from URL first, then fallback to localStorage snapshot
   React.useEffect(() => {
@@ -234,8 +241,8 @@ export default function FlexDemoPage() {
         setSentimentHistory(Array.isArray(d.sentimentHistory) ? d.sentimentHistory : []);
       })
       .catch(()=>{ toast.error("Failed to load summary"); })
-      .finally(()=> setLoadingSummary(false));
-  }, [buildQuery]);
+      .finally(()=> { setLoadingSummary(false); loadListings(); });
+  }, [buildQuery, loadListings]);
 
   React.useEffect(() => {
     loadReviews();
